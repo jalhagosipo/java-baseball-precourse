@@ -12,10 +12,10 @@ public class Controller {
         this.input = number;
     }
 
-    boolean checkAnswer() {
+    String checkAnswer() {
         // TODO 힌트 출력 -> 볼 or 스트라이크 or 낫싱
         // 답맞춤
-        return true;
+        return "3스트라이크";
     }
 
     boolean finishGame(String endInput) {
