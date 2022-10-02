@@ -6,6 +6,7 @@ public class UI {
     Controller controller = new Controller();
     String hint;
     boolean finishGame = false;
+    private static String THREE_STRIKE = "3스트라이크";
 
     void start() {
 
@@ -22,7 +23,7 @@ public class UI {
     }
 
     void finishGame(String hint) {
-        if (hint.equals("3스트라이크")) {
+        if (hint.equals(THREE_STRIKE)) {
             System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임종료");
             System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
             String input = readLine();
