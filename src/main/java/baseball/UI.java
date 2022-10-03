@@ -23,8 +23,9 @@ public class UI {
     }
 
     void finishGame(String hint) {
+        System.out.println(hint);
         if (hint.equals(THREE_STRIKE)) {
-            System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임종료");
+            System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
             System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
             String input = readLine();
             finishGame = controller.finishGame(input);
