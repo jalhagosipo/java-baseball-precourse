@@ -19,6 +19,11 @@ public class Model {
         this.answerList = this.answer.toCharArray();
     }
 
+    public Model(String answer) {
+        this.answer = answer;
+        this.answerList = this.answer.toCharArray();
+    }
+
     private String makeAnswer() {
         List intList = new ArrayList<>();
         while (intList.size() < 3) {
