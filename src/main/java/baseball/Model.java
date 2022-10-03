@@ -67,7 +67,7 @@ public class Model {
 
     private boolean isBall(char ch) {
         boolean isBall = false;
-        for (int i = 0; i < answerList.length & !isBall; i++) {
+        for (int i = 0; !isBall && i < answerList.length; i++) {
             isBall = hasSameCharacter(ch, i);
         }
         return isBall;
